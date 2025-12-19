@@ -7,6 +7,9 @@ import Navbar from './Navbar'
 //importing footer on app.
 import Footer from './Footer'
 
+//importing external css from app.css
+import './app.css'
+
 //Now create arrow function
 let App=()=>{
   
@@ -22,8 +25,13 @@ let App=()=>{
     <>  
       {/* position of navbar to display: */}
       <Navbar></Navbar>
-    <h1>Hello First React Function</h1>
-    <p>I'm {mydetail.name}</p>
+
+      {/* apply inline css in react */}
+    <h1 style={{color:'red', fontSize:'50px', border:'2px solid black', display:'inline-block'}}>Hello First React Function</h1><br></br>
+      
+      {/* applying external css */}
+    <p id="myname">I'm {mydetail.name}</p>
+      
       {/* position of Footer to display: */}
       <Footer></Footer>
     </>
